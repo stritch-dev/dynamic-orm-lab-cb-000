@@ -4,7 +4,7 @@ class Student < InteractiveRecord
   def initialize(options={})
     super
     Student.column_names.each do |column_name|
-      Student.attr_accessor column_name.to_sym
+      attr_accessor column_name.to_sym
     end
   end
 end
